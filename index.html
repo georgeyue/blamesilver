@@ -54,5 +54,13 @@
       <div class="nope ie11">
         According to style hack this is IE 10+
       </div>
+
+      <script type="text/javascript" charset="utf-8">
+        var isIE10 = document.all && window.atob;
+
+        if (isIE10) {
+          document.write('<div>According to JS hack this is IE 10</div>');
+        }
+      </script>
     </body>
   </html>
