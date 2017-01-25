@@ -3,7 +3,56 @@
   <html>
     <head>
       <title>Blame Silver</title>
+
+
+      <style type="text/css" media="screen">
+        .nope {
+          display: none;
+        }
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          /* IE10+ CSS styles go here */
+          .ie11 {
+            display: block;
+          }
+        }
+      </style>
     </head>
     <body>
+      <p class="accent">
+      <!--[if IE]>
+        According to the conditional comment this is IE<br />
+      <![endif]-->
+      <!--[if IE 6]>
+        According to the conditional comment this is IE 6<br />
+      <![endif]-->
+      <!--[if IE 7]>
+        According to the conditional comment this is IE 7<br />
+      <![endif]-->
+      <!--[if IE 8]>
+        According to the conditional comment this is IE 8<br />
+      <![endif]-->
+      <!--[if IE 9]>
+        According to the conditional comment this is IE 9<br />
+      <![endif]-->
+      <!--[if gte IE 8]>
+        According to the conditional comment this is IE 8 or higher<br />
+      <![endif]-->
+      <!--[if lt IE 9]>
+        According to the conditional comment this is IE lower than 9<br />
+      <![endif]-->
+      <!--[if lte IE 7]>
+        According to the conditional comment this is IE lower or equal to 7<br />
+      <![endif]-->
+      <!--[if gt IE 6]>
+        According to the conditional comment this is IE greater than 6<br />
+      <![endif]-->
+      <!--[if !IE]> -->
+      According to the conditional comment this is not IE 5-9<br />
+      <!-- <![endif]-->
+      </p>
+      <div class="nope ie11">
+        According to style hack this is IE 10+
+      </div>
     </body>
   </html>
